@@ -1,0 +1,87 @@
+{
+  "id": "681ccf65-28a9-4b81-8e55-e25953485f22",
+  "version": "2.0",
+  "name": "Neapro",
+  "url": "https://qa.neapro.site",
+  "tests": [{
+    "id": "24b3d7fd-c0ea-4b08-9c77-ae78dd07d23e",
+    "name": "Avtorization",
+    "commands": [{
+      "id": "3911318d-7829-4106-902d-e9f09d6dd787",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "923ee7e9-b6da-4c20-ad09-cfda9752ab7f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.fieldset:nth-child(1) input",
+      "targets": [
+        ["css=.fieldset:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/section/div[2]/div/div/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "arina_zelencova@mail.ru"
+    }, {
+      "id": "5b2b4b5b-0576-44d1-bec5-b1119ac02327",
+      "comment": "",
+      "command": "type",
+      "target": "css=.fieldset:nth-child(2) input",
+      "targets": [
+        ["css=.fieldset:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/section/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "MisArishechkaqew"
+    }, {
+      "id": "bd60d646-0b0a-4c9b-ba84-d8c5a153d6ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/section/div[2]/div/div/div/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Подтвердить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4bc0d73-a880-4f38-8332-01108b535bfc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mobile_menu__burger",
+      "targets": [
+        ["css=.mobile_menu__burger", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div[2]/div/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc9e9752-51d6-470b-a7d7-62eb12fd37c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logout",
+      "targets": [
+        ["css=.logout", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f0f1b994-0fe3-4235-9225-d852c9a78d06",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["24b3d7fd-c0ea-4b08-9c77-ae78dd07d23e"]
+  }],
+  "urls": ["https://qa.neapro.site/login", "https://qa.neapro.site/"],
+  "plugins": []
+}
